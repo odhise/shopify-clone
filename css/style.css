@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 :root{
-    --primary-color:#67948C;
+    --primary-color:#134C3F;
     --light-grey:#6B7D9F;
     --beige:#FBF7ED;
     --dargk-grey:#494A4B;
@@ -14,7 +14,7 @@
 
 /*Global-styles*/
 body{
-    font-family:"Roboto" sans-serif;
+    font-family:"Roboto", sans-serif;
 }
 .container{
     width:80%;
@@ -23,8 +23,9 @@ body{
 
 /*btn-styles*/
 .btn{
-    padding:0.5em;
+    padding:.8em;
     border:none;
+    font-size: 1rem;
 
     
 }
@@ -51,3 +52,52 @@ body{
     nav ul li{
         padding:0.5em;
     }
+
+/* hero-styles*/
+.hero-flex{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    
+}
+
+
+
+.shoffer{
+    font-size:3rem;
+    color:var(--primary-color);
+    font-family: "Roboto", sans-serif;
+}
+
+.hero-left form {
+    padding: 1.5em 0;
+}
+
+
+.pop{
+    font-size: 1rem;
+    padding:.8em;
+    border:1.5px solid; 
+    border-radius:2px;
+}
+
+.mine{
+    color:var(--dark-grey);
+    
+    
+}
+
+.hero-left{
+    width:30%;
+}
+
+.hero-right{
+    width:50%;
+}
+
+.hero-right img{
+width: 100%;
+}
+header{
+ background-color:var(--beige);
+}
