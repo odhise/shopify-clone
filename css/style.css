@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 :root{
-    --primary-color:#134C3F;
+    --primary-color:#008060;
     --light-grey:#6B7D9F;
     --beige:#FBF7ED;
     --dargk-grey:#494A4B;
     --white:#fff;
+   --primary-color-dark:#004C3F;
 }
 *{
     margin:0;
@@ -21,12 +22,16 @@ body{
     margin:0 auto;
 }
 
+a{
+    text-decoration: none;
+}
+
 /*btn-styles*/
 .btn{
     padding:.8em;
     border:none;
     font-size: 1rem;
-
+cursor: pointer;
     
 }
 .btn-green{
@@ -34,6 +39,12 @@ body{
     color:#fff;
 
 }
+
+.btn-green:hover{
+background-color:var(--primary-color-dark);
+transition: all .5s ease-in;
+}
+
 /*navigation-styles*/
 
     .navigation{
@@ -101,3 +112,58 @@ width: 100%;
 header{
  background-color:var(--beige);
 }
+
+/*Businesses section*/
+.businesses{
+    background-color:var(--primary-color-dark);
+    color:#fff;
+    padding:5em 0;
+}
+
+.businesses a{
+    color:#fff;
+}
+
+.businesses h2{
+    font-size:3rem;
+    font-weight:300;
+}
+
+
+.online{
+    display:flex;
+    justify-content:space-between;
+    margin:2em 0;
+    
+} 
+
+.online p:last-child:hover{
+cursor:pointer;
+}
+
+.online P:last-child:hover .long-arrow{
+    transform:translateX(5px);
+    transition:all .5s ease-in;
+
+}
+.websites{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+ figcaption p:first-child{
+    text-transform:uppercase;
+    margin:0.5em 0;
+}
+
+figcaption:hover .mouse{
+    text-decoration:underline;
+}
+.icon{
+    margin-top: 2em;
+}
+
+
+
+
+
